@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    container_name: django-webpack-playground
+    image: django-webpack-playground-dev:0.0.1
+    tty: true
+    stdin_open: true
+    volumes:
+      - ..:/app:delegated
+      - ./.config:/root/.config
+      - python:/python
+    ports:
+      - 8000:8000
+
+volumes:
+  python:
