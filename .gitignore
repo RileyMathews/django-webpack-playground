@@ -105,4 +105,4 @@ venv.bak/
 
 # javascript
 node_modules
-/app/static
+**/*/static
