@@ -10,7 +10,7 @@ services:
     stdin_open: true
     volumes:
       - ..:/app:delegated
-      - ./.config:/root/.config
+      - ./.config/pip:/root/.config/pip
       - python:/python
     ports:
       - 8000:8000
