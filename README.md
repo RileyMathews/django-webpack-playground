@@ -8,3 +8,6 @@
 1. ran `npm install webpack webpack-cli --save-dev`
 1. modified package json file to remove entrypoint and set private to true
 1. added /app/static to gitignore because it will soon contain build artifacts.
+1. moved static files to global ./static directory.
+1. added top level ./assets directory
+1. added webpack config to build from ./assets/index.js to ./static/main.js
