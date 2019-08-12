@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/RileyMathews/django-webpack-playground#readme",
   "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.6"
   }
