@@ -15,20 +15,17 @@ module.exports = {
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'static'),
-    publicPath: "http://0.0.0.0:3000/static/"
+    path: path.resolve(__dirname, 'static')
   },
   devServer: {
-    // conetntBase: path.join(__dirname, "static/"),
-    port: 3000,
-    hot: true,
     host: '0.0.0.0',
+    port: 3000,
     publicPath: "http://0.0.0.0:3000/static/",
+    hot: true,
     hotOnly: false, // TODO: toggle this to attempt to get hot reloading working
     headers: {
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Methods": "GET",
       "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
     }
   }
