@@ -11,3 +11,5 @@
 1. moved static files to global ./static directory.
 1. added top level ./assets directory
 1. added webpack config to build from ./assets/index.js to ./static/main.js
+1. added babel and loaders with webpack config
+1. added react scripts as dependency and setup boilerplate react project
