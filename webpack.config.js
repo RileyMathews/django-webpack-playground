@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack')
 
 module.exports = {
   entry: './assets/index.js',
@@ -17,5 +18,11 @@ module.exports = {
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'static')
-  }
+  },
+  devServer: {
+    port: 3000,
+    publicPath: "http://0.0.0.0:3000/static/",
+    hotOnly: true
+  },
+  plugins: [new webpack.HotModuleReplacementPlugin()]
 };
